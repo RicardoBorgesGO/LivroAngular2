@@ -1,7 +1,11 @@
 <h2>Lista de Pessoas</h2>
 
-<ul>
-  <li>
+<input type="text" [(ngModel)]="nome">
 
+<p>{{nome}}</p>
+
+<ul>
+  <li *ngFor="let pessoa of pessoas">
+    {{pessoa}}
   </li>
 </ul>
